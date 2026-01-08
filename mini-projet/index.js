@@ -62,13 +62,40 @@ function grid5()
         if(i<3) {
         div[i].style.backgroundColor = "#427cf5";
         }
-        else if()
+        else if(i<6) {
+            if(i%2!==0) {
+                div[i].style.backgroundColor = "#956caf";
+            }
+            else {
+                div[i].style.backgroundColor = "#e85b69";
+            }
+        }
+        else if(i<9) {
+            if(i%2===0) {
+                div[i].style.backgroundColor = "#eca45c";
+            }
+            else {
+                div[i].style.backgroundColor = "#efec4f";
+            }
+        }
     }
     
 }
 
 function grid6()
-{
+{   let grid6 = document.querySelector("section:last-of-type");
+    let div = grid6.querySelectorAll("div");
+    for(let i = 0; i<div.length; i++) {
+        if(i<3) {
+            div[i].style.background = "linear-gradient(#956caf, #427cf5)";
+        }
+        else if(i<6) {
+            div[i].style.background = "linear-gradient(#4cee7e, #efec4f)";
+        }
+        else {
+            div[i].style.background = "linear-gradient(#eca45c, #e85b69)";
+        }
+    }
 
 }
 
